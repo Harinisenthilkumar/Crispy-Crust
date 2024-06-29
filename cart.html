@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Page</title>
+    <style>
+        /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    position: relative;
+    background-image: image-set(url('image/category-background.jpg'));
+    background-repeat:no-repeat;
+    background-size:cover;
+    backdrop-filter: blur(10px);
+
+}
+
+/* Background blur effect */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/background.jpg') no-repeat center center/cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Cart container styling */
+.cart-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in;
+}
+
+.cart-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h2 {
+    margin-bottom: 10px;
+}
+
+.remove-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #e68507;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.checkout-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* General animation classes */
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    
+    section {
+        padding: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="cart-container">
+        <h1 class="cart-title">Your Cart</h1>
+        <div class="cart-item fade-in">
+            <img src="image/c-6.png"Pizza" class="cart-item-image">
+            <div class="cart-item-details">
+                <h2>Pizza Margherita</h2>
+                <p>$12.99</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item fade-in">
+            <img src="image/coke.png"Pizza" class="cart-item-image">
+            <div class="cart-item-details">
+                <h2>coke</h2>
+                <p>$14.99</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item fade-in">
+            <img src="image/menu-3.png" alt="Pizza" class="cart-item-image">
+            <div class="cart-item-details">
+                <h2>Soft drinks</h2>
+                <p>$16.99</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        
+        <div class="cart-total fade-in">
+            <h2>Total: $58.96</h2>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -42,4 +42,4 @@ Create a new branch with your feature.
 Submit a pull request with your changes.
 📬 Contact
 For any queries, feel free to reach out:
-Mail: senthilkumarharini2002@gmail.com
+Mailus: senthilkumarharini2002@gmail.com

@@ -67,7 +67,7 @@ We’re always open to new ideas! Want to enhance features or improve the design
 
 
 
-📬 Contact
+📬 Contact me :
 
 Got any questions? Feel free to reach out!
 

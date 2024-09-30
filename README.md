@@ -71,6 +71,5 @@ We’re always open to new ideas! Want to enhance features or improve the design
 
 Got any questions? Feel free to reach out!
 
-📧 Email: senthilkumarharini2002@gmail.com
-
+📧 Email : senthilkumarharini2002@gmail.com
 
